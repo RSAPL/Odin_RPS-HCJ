@@ -7,20 +7,20 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <script src="game.js"></script>
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <header>RPS</header>
     <div class="scoreboard">
-        <div id="human"></div>
-        <div id="machine"></div>
+        <span id="H">Human</span>
+        <span id="M">Machine</span>
     </div>
     <div class="container">
-        <span class="emoji" id="rock">✊</span>
-        <span class="emoji" id="paper">📄</span>
-        <span class="emoji" id="scissors">✂️</span>
-        </div>
+        <span class="emoji" id="rock" onclick="playGame('rock', getComputerChoice())">✊</span>
+        <span class="emoji" id="paper" onclick="playGame('paper', getComputerChoice())">✋</span>
+        <span class="emoji" id="scissors" onclick="playGame('scissors', getComputerChoice())">✌️</span>
+    </div>
     </div>
 </body>
 </html>
