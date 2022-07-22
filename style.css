@@ -1,15 +1,25 @@
+header {
+    font-family: 'Righteous';
+    text-align: center;
+    font-size: 64px;
+}
+
 .container {
     margin: 0 auto;
-    width: 60%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .emoji {
+    box-sizing: border-box;
+    width: 245px;
+    height: 245px;
     border-radius: 3px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 28px;
-    padding-right: 28px;
+    padding: 32px;
     margin: 30px 50px;
+    text-align: center;
+    vertical-align: center;
     top: 70px;
     border-left: 8px solid black;
     border-top: 4px solid black;
@@ -18,17 +28,22 @@
     font-size: 128px;
     cursor: pointer;
     position: relative;
-    transition: border-bottom 350ms, border-left 400ms, box-shadow 600ms ease-in, border-bottom-left-radius 300ms;
-    transition-timing-function: ease-out;
+    transition: border-bottom 275ms, border-left 275ms, clip-path 300ms ease, padding-left 50ms ease-in, padding-bottom 50ms ease-in;
+    transition-timing-function: ease-in;
 }
 
 .emoji:hover {
-    content: "";
     border-bottom: 14px solid black;
     border-left: 18px solid black;
-    border-right: 0px dotted black;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 0px;
-    box-shadow: 2px 0px;
-    width: 50%;
+    border-right: 4px solid black;
+    clip-path: polygon(
+        0% 14px,
+        14px 0%,
+        100% 0%,
+        100% calc(100% - 14px),
+        calc(100% - 14px) 100%,
+        0% 100%
+    );
+    padding-left: 22px;
+    padding-bottom: 24px;
 }
