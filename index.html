@@ -7,19 +7,22 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@500;700&display=swap" rel="stylesheet"> 
     <script src="game.js"></script>
-    <title>Rock Paper Scissors</title>
+    <title>✊✋✌️</title>
 </head>
 <body>
     <div class="scoreboard">
-        <span id="H">Human</span>
-        <span id="M">Machine</span>
+        <span class="team" id="H">Human</span>
+        <span class="team" id="M">Machine</span>
+        <br><br>
+        <div class="number" id="H">0</div>
+        <div class="number" id="M">0</div>
     </div>
     <div class="container">
-        <span class="emoji" id="rock" onclick="playGame('rock', getComputerChoice())">✊</span>
-        <span class="emoji" id="paper" onclick="playGame('paper', getComputerChoice())">✋</span>
-        <span class="emoji" id="scissors" onclick="playGame('scissors', getComputerChoice())">✌️</span>
+        <span class="emoji" id="rock" onclick="decideWinner('rock', getComputerChoice())">✊</span>
+        <span class="emoji" id="paper" onclick="decideWinner('paper', getComputerChoice())">✋</span>
+        <span class="emoji" id="scissors" onclick="decideWinner('scissors', getComputerChoice())">✌️</span>
     </div>
     </div>
 </body>

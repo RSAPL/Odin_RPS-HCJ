@@ -16,12 +16,26 @@
     display: relative;
 }
 
-#H{
-    padding-right: 30px;
+#H {
+    margin-right: 60px;
 }
 
 #M {
-    padding-left: 30px;
+    margin-left: 60px;
+}
+
+.number {
+    display: inline-block;
+    font-family: 'Roboto';
+    font-size: 28px;
+}
+
+#H.number {
+    margin-right: 85px;
+}
+
+#M.number {
+    margin-left: 85px;
 }
 
 .container {
@@ -50,6 +64,7 @@
     position: relative;
     transition: border-bottom 240ms, border-left 240ms, clip-path 30ms ease-out, padding-left 240ms ease-in, padding-bottom 240ms ease-out;
     transition-timing-function: ease-in;
+    background-color: transparent;
 }
 
 .emoji:hover {
@@ -66,5 +81,4 @@
         calc(100% - 24px) 100%,
         0% 100%
     );
-
 }
