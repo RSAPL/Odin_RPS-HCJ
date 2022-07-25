@@ -20,10 +20,11 @@
         <div class="number" id="M">0</div>
     </div>
     <div class="container">
-        <span class="emoji" id="rock" onclick="decideWinner('rock', getComputerChoice())">✊</span>
-        <span class="emoji" id="paper" onclick="decideWinner('paper', getComputerChoice())">✋</span>
-        <span class="emoji" id="scissors" onclick="decideWinner('scissors', getComputerChoice())">✌️</span>
+        <span class="emoji" id="rock" onclick="playGame(decideWinner('rock', getComputerChoice()))">✊</span>
+        <span class="emoji" id="paper" onclick="playGame(decideWinner('paper', getComputerChoice()))">✋</span>
+        <span class="emoji" id="scissors" onclick="playGame(decideWinner('scissors', getComputerChoice()))">✌️</span>
     </div>
-    </div>
+    <hr>
+    <footer>&copy; Copyright 2022 HTML.am</footer>
 </body>
 </html>
